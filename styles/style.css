@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     width: 1100px;
-    height: 293px;
     align-items: center;
     padding: 92px 50px 96px 50px;
 }
@@ -35,14 +34,16 @@
 }
 
 .address {
-    font-family: "Raleway";
-    justify-self: end;
     text-underline-offset: 4px;
     font-style: normal;
     max-width: 240px;
-    line-height: 24.2px;
+    line-height: 25px;
     font-size: 18px;
     list-style: none;
+}
+
+.address-contact{
+    justify-self: end;
 }
 
 .cover {
@@ -67,7 +68,6 @@
     position: relative;
     color: #ffffff;
     font-size: 100px;
-    font-family:  "Raleway";
     line-height: 115px;
     font-weight: 700;
     text-transform: uppercase;
@@ -104,7 +104,7 @@
     align-items: center;
     font-size: 22px;
     justify-content: space-between;
-    margin-top: 106px;
+    margin-top: 107px;
 }
 
 .cover__description-text {
@@ -116,7 +116,7 @@
 
 .bet-button {
     text-transform: uppercase;
-    border: 1px solid #ffffff;
+    border: 1px solid currentColor;
     padding: 12px 32px 11px 31px;
     color: #ffffff;
     background-color: transparent;
@@ -139,7 +139,7 @@
     display: flex;
     gap: 25px;
     list-style: none;
-   
+    flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -160,21 +160,19 @@
     flex-direction: column;
     position: relative;
     justify-content: space-between;
+    background-position: center;
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-position: center;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
 }
 
 .card__title {
@@ -214,8 +212,8 @@
 }
 
 .about {
-    padding: 0px 24px 0px 24px;
-    height: 595px;
+    padding: 2px 24px 0px 24px;
+    margin-bottom: 33px;
     display: grid;
     justify-items: center;
     grid-template-columns: 334px 1fr;
@@ -238,7 +236,7 @@
 }
 
 .about__column-right {
-    padding-top: 105px;
+    padding-top: 103px;
 }
 
 .about__title {
@@ -262,20 +260,9 @@
 }
 
 .footer {
-    padding: 147px 50px;
+    padding: 147px 50px 82px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.address__footer {
-    font-family: "Raleway";
-    
-    text-underline-offset: 4px;
-    font-style: normal;
-    max-width: 240px;
-    line-height: 24.2px;
-    font-size: 18px;
-    list-style: none;
 }
 
 .footer__menu-list {
